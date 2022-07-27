@@ -33,4 +33,3 @@ for file in os.listdir(path):
         shutil.move(f"{path}/{file}", f"{path}/Textfile")
     
     
-    
