@@ -30,7 +30,7 @@ for file in os.listdir(path):
     elif file.endswith(".xlsx"):
         shutil.move(f"{path}/{file}", f"{path}/Spreedsheet")
     elif file.endswith(".docx"):
-        shutil.move(f"{path}/{file}", f"{path}/textfile")
+        shutil.move(f"{path}/{file}", f"{path}/Textfile")
     
     
     
