@@ -4,7 +4,7 @@ It creates the following folders:
 
 "PDF","Spreedsheet","Textfile","Executable","Misc."
 
-- File are arranged as follows:
+File are arranged as follows:
 
 - Files with the .pdf filetype are put in the PDF folder
 
