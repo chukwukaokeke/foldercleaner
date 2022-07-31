@@ -1,6 +1,6 @@
 #!/usr/local/bin python3
 
-from genericpath import isdir
+
 import os
 import shutil
 
@@ -34,11 +34,9 @@ for file in os.listdir(path):
         shutil.move(f"{path}/{file}", f"{path}/Textfile")
     elif file.endswith(".dmg"):
         shutil.move(f"{path}/{file}", f"{path}/Executable")
-    elif os.path.isdir(file):
-        continue     
     else:
-        try:
+        if os.path.isdir(file) == False:
             shutil.move(f"{path}/{file}", f"{path}/Misc.")
-        except shutil.Error:
-            break
+
+    
     
